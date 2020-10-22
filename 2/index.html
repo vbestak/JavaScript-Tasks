@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome checker</title>
+    <script src="index.js" defer></script>
+    <style>
+      .flex {
+        display: flex;
+        flex-direction: column;
+      }
+      .flex--ai--c {
+        align-items: center;
+      }
+      input {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 0.125rem solid black;
+        outline: none;
+        width: 17.5rem;
+      }
+      input:focus {
+        border-bottom: 0.125rem solid rgb(8, 8, 184);
+      }
+      .margin-b {
+        margin-bottom: 1.5rem;
+      }
+      #check_button {
+        padding: 0.4rem 1.25rem;
+        background-color: white;
+        border: 0.0625rem solid black;
+        cursor: pointer;
+        transition: 0.3s all ease-in;
+      }
+      #check_button:hover {
+        background-color: black;
+        color: white;
+      }
+      h1 {
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex flex--ai--c">
+      <h1>Palindrome checker</h1>
+      <label for="palindrome" class="margin-b">Check if your text is a palindrome</label>
+      <div class="margin-b">
+        <input id="palindrome" type="text" placeholder="Enter your text" />
+        <span id="check_button">Check</span>
+      </div>
+      <div id="info"></div>
+    </div>
+  </body>
+</html>

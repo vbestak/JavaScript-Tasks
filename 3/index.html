@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadatak 3</title>
+    <script src="index.js" defer></script>
+    <style>
+      .flex {
+        display: flex;
+        flex-direction: column;
+      }
+      .flex--ai--c {
+        align-items: center;
+        justify-content: space-between;
+      }
+      input {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 0.125rem solid black;
+        outline: none;
+        width: 17.5rem;
+      }
+      input:focus {
+        border-bottom: 0.125rem solid rgb(8, 8, 184);
+      }
+      .input-group {
+        margin-bottom: 1.5rem;
+      }
+      #search_button {
+        padding: 0.4rem 1.25rem;
+        background-color: white;
+        border: 0.0625rem solid black;
+        cursor: pointer;
+        transition: 0.3s all ease-in;
+      }
+      #search_button:hover {
+        background-color: black;
+        color: white;
+      }
+      .input-group {
+        width: 29.6875rem;
+      }
+      .input-group input {
+        float: right;
+      }
+      #info {
+        margin-top: 6rem;
+      }
+      h1 {
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex flex--ai--c">
+      <h1>Welcome</h1>
+      <p>Search for the lowest combination count.</p>
+
+      <div class="input-group">
+        <label for="list">List of numbers :</label>
+        <input type="text" id="list" placeholder="e.g. 2, 3, 5, 14..." />
+      </div>
+
+      <div class="input-group">
+        <label for="number">Looked for number: </label>
+        <input type="text" id="number" placeholder="e.g. 14" />
+      </div>
+
+      <div id="search_button">Search</div>
+      <div id="info"></div>
+    </div>
+  </body>
+</html>
